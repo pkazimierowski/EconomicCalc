@@ -10,19 +10,26 @@ namespace EconomicCalc
 {
     class JsonHandler_NBPExchangeRate
     {
+        private List<RootObject> List;
         private string BaseAddr = "http://api.nbp.pl/api/exchangerates/tables/c/";
-        public async Task MakeStringGA()
+
+        public List<RootObject> GetRootObjects()
+        {
+            return List;
+        }
+
+        public async Task ConverJsonToList()
         {
             try
             {
-                var getData = JsonConvert.DeserializeObject<List<RootObject>>(await TestGet());
+                List = JsonConvert.DeserializeObject<List<RootObject>>(await TestGet());
             }
             catch (Exception e)
             {
                 var a = e.Message.ToString();
             }
         }
-        public async Task<string> TestGet()
+        private async Task<string> TestGet()
         {
             String testrequest = "";
             try
@@ -51,3 +58,4 @@ namespace EconomicCalc
         }
     }
 }
+
