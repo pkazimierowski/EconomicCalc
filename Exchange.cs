@@ -6,7 +6,7 @@ namespace EconomicCalc
 	{
 		public Exchange()
 		{
-
+			
 		}
 
 	}
