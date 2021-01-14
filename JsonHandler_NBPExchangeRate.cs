@@ -6,7 +6,7 @@ using System.IO;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace wymiana
+namespace EconomicCalc
 {
     class JsonHandler_NBPExchangeRate
     {
