@@ -1,56 +1,57 @@
-﻿class Pit
+﻿
+
+/**
+ * Class Pit includes objects and methots that allows user to calculate their taxes.
+ * Taken variables are
+ * Taxed_value - the ammount of income money the tax will be calculated from
+ * Costs - cots of the income that are subtracted from taxed_value
+ * ap - shortcut for advanced payments witch are subtracted from the final tax value
+ * 
+ * Author Dawid Górny
+ */
+
+
+class Pit
 {
-    double ubezpieczenie = 0.0775d;
-    //Cena ubezpieczenia zdrowotnego wynosi 7.75% dlatego jest sztywno ustalona
-    public double podatekProgresywny(double kwota_podatku, double koszty, double zaliczki)
+    double healthcare = 0.0775d;
+    //Healthcare tax cannot be changed by user because its value its awlays 7,75% 
+    public double podatekProgresywny(double taxed_value, double costs, double ap)
     {
-        /**
-         * Pobierane wartosci to kolejno kwota_podatku - odpowiada za główną 
-         * wartość od której będziemy odejmować kolejne wartości aby otrzymać wyliczony podatek PIT
-         * koszty = Odpowiadają za koszt uzyskania przychodu. Podczas obliczen są odejmowane od kwota_podatku
-         * zaliczki - odpowiadają za wpłacone juz zaliczki podatkowe, odejmowane są od końcowego wyniku
-         */
-        double wynik = 0d;
-        kwota_podatku = kwota_podatku - koszty;
-        kwota_podatku = kwota_podatku - ubezpieczenie;
-        if (kwota_podatku <= 85528d)
+
+        double outcome = 0d;
+        taxed_value = taxed_value - costs;
+        taxed_value = taxed_value - healthcare;
+        if (taxed_value <= 85528d)
         {
-            wynik = (kwota_podatku - (kwota_podatku * 0.17d)) - zaliczki;
-            wynik = kwota_podatku - wynik;
+            outcome = (taxed_value - (taxed_value * 0.17d)) - ap;
+            outcome = taxed_value - outcome;
             return wynik;
         }
         else
         {
-            wynik = ((85528d * 0.17d) + ((kwota_podatku - 85528d) * 0.32d)) - zaliczki;
-            return wynik;
+            outcome = ((85528d * 0.17d) + ((taxed_value - 85528d) * 0.32d)) - ap;
+            return outcome;
         }
 
     }
 
-    public double podatekLinowy(double kwota_podatku, double koszty, double zaliczki)
+    public double podatekLinowy(double taxed_value, double costs, double ap)
     {
-        /**
-         * Zasada działania taka sama jak przy podatku progresywnym, 
-         * różnica pojawia się jedynie podczas wykonywania obliczeń
-         */
-        double wynik = 0d;
-        kwota_podatku = kwota_podatku - koszty;
-        kwota_podatku = kwota_podatku - ubezpieczenie;
-        wynik = (kwota_podatku - (kwota_podatku * 0.19d)) - zaliczki;
-        return wynik;
+
+        double outcome = 0d;
+        taxed_value = taxed_value - costs;
+        taxed_value = taxed_value - healthcare;
+        outcome = (taxed_value - (taxed_value * 0.19d)) - ap;
+        return outcome;
     }
 
-    public double Ryczalt(double procent, double kwota_podatku, double koszty, double zaliczki)
+    public double Ryczalt(double procent, double taxed_value, double costs, double ap)
     {
-        /**
-         * W tym przypadku dochodzi jeszcze wartosc procent
-         * która dzial mniej wiecej tak jak gdybysmy przyjeli stope oprocentowania ryczaltu
-         * jako próg podatkowy 
-         */
-        double wynik = 0;
-        kwota_podatku = kwota_podatku - koszty;
-        kwota_podatku = kwota_podatku - ubezpieczenie;
-        wynik = (kwota_podatku - (kwota_podatku * (procent * (0.01))) - zaliczki);
-        return wynik;
+
+        double outcome = 0d;
+        taxed_value = taxed_value - costs;
+        taxed_value = taxed_value - taxed_value;
+        outcome = (taxed_value - (taxed_value * (procent * (0.01))) -ap);
+        return outcome;
     }
 }
