@@ -16,3 +16,6 @@ C:\Users\patry\Source\Repos\pkazimierowski\EconomicCalc\obj\Debug\EconomicCalc.p
 C:\Users\patry\Source\Repos\pkazimierowski\EconomicCalc\bin\Debug\EconomicCalc.exe.config
 C:\Users\patry\Source\Repos\pkazimierowski\EconomicCalc\bin\Debug\EconomicCalc.exe
 C:\Users\patry\Source\Repos\pkazimierowski\EconomicCalc\bin\Debug\EconomicCalc.pdb
+C:\Users\patry\source\repos\pkazimierowski\EconomicCalc\bin\Debug\Newtonsoft.Json.dll
+C:\Users\patry\source\repos\pkazimierowski\EconomicCalc\bin\Debug\Newtonsoft.Json.xml
+C:\Users\patry\source\repos\pkazimierowski\EconomicCalc\obj\Debug\EconomicCalc.csproj.CopyComplete
