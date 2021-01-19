@@ -66,11 +66,7 @@ namespace Salaries
                 return net_payout;
 
             }
-        }
-        static void Main(string[] args)
-        {
-            contract test = new contract();
-            Console.WriteLine("Salary " + test.b2b(12300, 0));
+
 
         }
     }
