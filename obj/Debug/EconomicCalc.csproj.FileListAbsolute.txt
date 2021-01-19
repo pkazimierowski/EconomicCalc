@@ -7,3 +7,13 @@ C:\Users\patry\source\repos\EconomicCalc\obj\Debug\EconomicCalc.csproj.GenerateR
 C:\Users\patry\source\repos\EconomicCalc\obj\Debug\EconomicCalc.csproj.CoreCompileInputs.cache
 C:\Users\patry\source\repos\EconomicCalc\obj\Debug\EconomicCalc.exe
 C:\Users\patry\source\repos\EconomicCalc\obj\Debug\EconomicCalc.pdb
+C:\Users\patry\source\repos\pkazimierowski\EconomicCalc\bin\Debug\EconomicCalc.exe.config
+C:\Users\patry\source\repos\pkazimierowski\EconomicCalc\bin\Debug\EconomicCalc.exe
+C:\Users\patry\source\repos\pkazimierowski\EconomicCalc\bin\Debug\EconomicCalc.pdb
+C:\Users\patry\source\repos\pkazimierowski\EconomicCalc\obj\Debug\EconomicCalc.csprojAssemblyReference.cache
+C:\Users\patry\source\repos\pkazimierowski\EconomicCalc\obj\Debug\EconomicCalc.Properties.Resources.resources
+C:\Users\patry\source\repos\pkazimierowski\EconomicCalc\obj\Debug\EconomicCalc.csproj.GenerateResource.cache
+C:\Users\patry\source\repos\pkazimierowski\EconomicCalc\obj\Debug\EconomicCalc.csproj.CoreCompileInputs.cache
+C:\Users\patry\source\repos\pkazimierowski\EconomicCalc\obj\Debug\EconomicCalc.exe
+C:\Users\patry\source\repos\pkazimierowski\EconomicCalc\obj\Debug\EconomicCalc.pdb
+C:\Users\patry\source\repos\pkazimierowski\EconomicCalc\obj\Debug\EconomicCalc.Form1.resources
