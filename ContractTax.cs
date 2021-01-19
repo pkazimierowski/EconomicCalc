@@ -5,70 +5,73 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace EconomicCalc
+namespace Salaries
 {
-        class ContractTax
+    class Program
+    {
+        class contract
         {
-            public double uop(double wynagrodzenieb)
+            public double uop(double gross_salary)
             {
-                double ubezpieczeniemerytalne = wynagrodzenieb * 0.0957d;
-                double ubezpieczenierentowe = wynagrodzenieb * 0.015d;
-                double ubezpieczeniechorobowe = wynagrodzenieb * 0.0245d;
-                double podstawaskladki = wynagrodzenieb - ubezpieczeniechorobowe - ubezpieczenierentowe - ubezpieczeniemerytalne;
-                double kosztuzyskania = 250;
-                double podstawaopodatkowania = wynagrodzenieb - ubezpieczeniechorobowe - ubezpieczenierentowe - ubezpieczeniemerytalne - kosztuzyskania;
-                double ulgapodatkowa = 43.76d;
-                double zaliczkanapodatek = (podstawaopodatkowania * 0.17d) - ulgapodatkowa;
-                double ubezpieczniezdrowotne = podstawaskladki * 0.09d;
-                double ubezpieczeniezdrowotneodliczane = podstawaskladki * 0.0775d;
-                double podatekurzadskarbowy = zaliczkanapodatek - ubezpieczeniezdrowotneodliczane;
-                double dowyplaty = wynagrodzenieb - ubezpieczeniechorobowe - ubezpieczenierentowe - ubezpieczeniemerytalne - ubezpieczniezdrowotne - podatekurzadskarbowy;
-                return dowyplaty;
+                double pension_insurance = gross_salary * 0.0957d;
+                double disability_insurance = gross_salary * 0.015d;
+                double medical_insurance = gross_salary * 0.0245d;
+                double contribution_basis = gross_salary - medical_insurance - disability_insurance - pension_insurance;
+                double obtain_cost = 250;
+                double tax_base = gross_salary - medical_insurance - disability_insurance - pension_insurance - obtain_cost;
+                double tax_relief = 43.76d;
+                double tax_prepayment = (tax_base * 0.17d) - tax_relief;
+                double health_insurance = contribution_basis * 0.09d;
+                double deductible_health_insurance = contribution_basis * 0.0775d;
+                double tax_for_the_tax_office = tax_prepayment - deductible_health_insurance;
+                double net_payout = gross_salary - medical_insurance - disability_insurance - pension_insurance - health_insurance - tax_for_the_tax_office;
+                return net_payout;
 
             }
-            public double uz(double wynagrodzenieb)
+            public double uz(double gross_salary)
             {
-                double ubezpieczeniemerytalne = wynagrodzenieb * 0.0957d;
-                double ubezpieczenierentowe = wynagrodzenieb * 0.015d;
-                double ubezpieczeniechorobowe = wynagrodzenieb * 0.0245d;
-                double sumaskładek = ubezpieczeniechorobowe + ubezpieczeniemerytalne + ubezpieczenierentowe;
-                double kosztuzyskania = (wynagrodzenieb - sumaskładek) * 0.2d;
-                double składkazdrowotnazus = (wynagrodzenieb - sumaskładek) * 0.09d;
-                double pomniejszeniezaliczkinapodatek = (wynagrodzenieb - sumaskładek) * 0.075d;
-                double zaliczkanapodatekdochodowy = (((wynagrodzenieb - sumaskładek) - kosztuzyskania) * 0.18d) - pomniejszeniezaliczkinapodatek;
-                double dowyplaty = wynagrodzenieb - (sumaskładek + składkazdrowotnazus + zaliczkanapodatekdochodowy);
-                return dowyplaty;
+                double pension_insurance = gross_salary * 0.0957d;
+                double disability_insurance = gross_salary * 0.015d;
+                double medical_insurance = gross_salary * 0.0245d;
+                double sum_of_contributions = medical_insurance + pension_insurance + disability_insurance;
+                double obtain_cost = (gross_salary - sum_of_contributions) * 0.2d;
+                double health_composition = (gross_salary - sum_of_contributions) * 0.09d;
+                double reduction_of_tax_prepayment = (gross_salary - sum_of_contributions) * 0.075d;
+                double prepayment_income_tax = (((gross_salary - sum_of_contributions) - obtain_cost) * 0.18d) - reduction_of_tax_prepayment;
+                double net_payout = gross_salary - (sum_of_contributions + health_composition + prepayment_income_tax);
+                return net_payout;
             }
 
-            public double uod(double wynagrodzenieb)
+            public double uod(double gross_salary)
             {
-                double kosztyuzyskania = wynagrodzenieb * 0.2d;
-                double dochod = wynagrodzenieb - kosztyuzyskania;
-                double podatek = dochod * 0.17d;
-                double dowyplaty = wynagrodzenieb - podatek;
-                return dowyplaty;
+                double obtain_cost = gross_salary * 0.2d;
+                double income = gross_salary - obtain_cost;
+                double tax = income * 0.17d;
+                double net_payout = gross_salary - tax;
+                return net_payout;
             }
 
-            public double b2b(double wynagrodzenieb, double koszty)
+            public double b2b(double gross_salary, double costs)
             {
-                double vat = wynagrodzenieb * 0.23d;
-                double wynagrodzenienetto = wynagrodzenieb - vat;
-                double vatzkosztami = vat - koszty;
-                if (vatzkosztami < 0)
-                { vatzkosztami = 0; }
-                double wynagrodzeniepovacie = wynagrodzenieb - vatzkosztami;
-                double wynagrodzenienettozkosztami = wynagrodzenienetto - koszty;
-                double podatekzkosztami = wynagrodzenienettozkosztami * 0.17d;
+                double vat = gross_salary * 0.23d;
+                double net_income = gross_salary - vat;
+                double vat_with_costs = vat - costs;
+                if (vat_with_costs < 0)
+                { vat_with_costs = 0; }
+                double income_with_tax = gross_salary - vat_with_costs;
+                double net_income_with_costs = net_income - costs;
+                double tax_with_costs = net_income_with_costs * 0.17d;
                 double zus = 1360;
-                double dowyplaty = wynagrodzeniepovacie - podatekzkosztami - zus;
-                return dowyplaty;
+                double net_payout = income_with_tax - tax_with_costs - zus;
+                return net_payout;
 
             }
         }
         static void Main(string[] args)
         {
-            ContractTax test = new ContractTax();
-            Console.WriteLine("wypłata " + test.b2b(12300, 0));
+            contract test = new contract();
+            Console.WriteLine("Salary " + test.b2b(12300, 0));
 
         }
+    }
 }
