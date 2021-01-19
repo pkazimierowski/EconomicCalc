@@ -1,0 +1,5 @@
+﻿.vs
+bin
+obj
+*.cache
+.vs/EconomicCalc/v16/.suo
