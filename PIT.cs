@@ -25,7 +25,7 @@ class Pit
         {
             outcome = (taxed_value - (taxed_value * 0.17d)) - ap;
             outcome = taxed_value - outcome;
-            return wynik;
+            return outcome;
         }
         else
         {
