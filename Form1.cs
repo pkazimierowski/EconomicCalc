@@ -54,8 +54,9 @@ namespace EconomicCalc
 
             Exchange_form exForm = new Exchange_form();
             await exForm.ComboboxInitializeItemsAsync();
-            exForm.tableLayoutPanelcreate();
             exForm.Show();
+            exForm.tableLayoutPanelcreate();
+
         }
     }
 }
