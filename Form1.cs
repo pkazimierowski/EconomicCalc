@@ -12,7 +12,9 @@ namespace EconomicCalc
 {
     public partial class Form1 : Form
     {
-        public Form1()
+
+
+    public Form1()
         {
             InitializeComponent();
         }
@@ -45,6 +47,15 @@ namespace EconomicCalc
         private void label1_Click_2(object sender, EventArgs e)
         {
 
+        }
+
+        private async void ExchangeButton_Click(object sender, EventArgs e)
+        {
+
+            Exchange_form exForm = new Exchange_form();
+            await exForm.ComboboxInitializeItemsAsync();
+            exForm.tableLayoutPanelcreate();
+            exForm.Show();
         }
     }
 }

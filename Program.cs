@@ -8,11 +8,12 @@ namespace EconomicCalc
 {
     static class Program
     {
+
         /// <summary>
         /// Główny punkt wejścia dla aplikacji.
         /// </summary>
         [STAThread]
-        static void Main()
+        static async Task Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

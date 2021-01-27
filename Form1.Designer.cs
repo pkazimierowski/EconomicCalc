@@ -139,6 +139,7 @@ namespace EconomicCalc
             this.ExchangeButton.TabIndex = 4;
             this.ExchangeButton.Text = "Exchange";
             this.ExchangeButton.UseVisualStyleBackColor = true;
+            this.ExchangeButton.Click += new System.EventHandler(this.ExchangeButton_Click);
             // 
             // panel4
             // 

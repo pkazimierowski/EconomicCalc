@@ -8,7 +8,7 @@ namespace EconomicCalc
     {
         private JsonHandler_NBPExchangeRate DataFromNBP;
         private List<Rate> JsonList;
-
+        protected String[] currency;
         public Exchange()
         {
             DataFromNBP = new JsonHandler_NBPExchangeRate();

@@ -1,0 +1,14 @@
+C:\Users\patry\git\obj\Debug\EconomicCalc.csprojAssemblyReference.cache
+C:\Users\patry\git\obj\Debug\EconomicCalc.Form1.resources
+C:\Users\patry\git\obj\Debug\EconomicCalc.Properties.Resources.resources
+C:\Users\patry\git\obj\Debug\EconomicCalc.csproj.GenerateResource.cache
+C:\Users\patry\git\obj\Debug\EconomicCalc.csproj.CoreCompileInputs.cache
+C:\Users\patry\git\bin\Debug\EconomicCalc.exe.config
+C:\Users\patry\git\bin\Debug\EconomicCalc.exe
+C:\Users\patry\git\bin\Debug\EconomicCalc.pdb
+C:\Users\patry\git\bin\Debug\Newtonsoft.Json.dll
+C:\Users\patry\git\bin\Debug\Newtonsoft.Json.xml
+C:\Users\patry\git\obj\Debug\EconomicCalc.csproj.CopyComplete
+C:\Users\patry\git\obj\Debug\EconomicCalc.exe
+C:\Users\patry\git\obj\Debug\EconomicCalc.pdb
+C:\Users\patry\git\obj\Debug\EconomicCalc.Exchange_form.resources
