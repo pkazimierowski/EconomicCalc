@@ -13,6 +13,7 @@ namespace EconomicCalc
         Label[,] tableLabels;
         double value;
         double result;
+        Form1 mainForm;
 
         String messagBox1 = "You did not chose a currency";
         String messagBox2 = "You did not eneter the correct value";
@@ -21,9 +22,12 @@ namespace EconomicCalc
         Exchange exchange;
 
 
-        public Exchange_form()
+        public Exchange_form(Form1 main)
         {
             InitializeComponent();
+            mainForm = main;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+
         }
         public void tableLayoutPanelcreate()
         {
@@ -113,8 +117,6 @@ namespace EconomicCalc
             {
                 MessageBox.Show(messagBox2, caption);
             }
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -124,6 +126,11 @@ namespace EconomicCalc
                 result = Math.Round(exchange.Buy(value, comboBox1.SelectedIndex), 2);
                 label3.Text = result.ToString() + " PLN";
             }
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            mainForm.Show();
         }
     }
 }

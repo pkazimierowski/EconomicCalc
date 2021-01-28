@@ -8,7 +8,7 @@ namespace EconomicCalc
 {
     static class Program
     {
-
+        
         /// <summary>
         /// Główny punkt wejścia dla aplikacji.
         /// </summary>

@@ -52,11 +52,13 @@ namespace EconomicCalc
         private async void ExchangeButton_Click(object sender, EventArgs e)
         {
 
-            Exchange_form exForm = new Exchange_form();
+            Exchange_form exForm = new Exchange_form(this);
             await exForm.ComboboxInitializeItemsAsync();
-            exForm.Show();
+            this.Hide();
             exForm.tableLayoutPanelcreate();
+            exForm.Show();
 
         }
+
     }
 }

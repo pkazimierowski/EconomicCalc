@@ -188,6 +188,7 @@ namespace EconomicCalc
             this.Controls.Add(this.panel1);
             this.Name = "Exchange_form";
             this.Text = "Exchange_form";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

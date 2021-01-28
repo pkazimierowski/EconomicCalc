@@ -12,3 +12,4 @@ C:\Users\patry\git\obj\Debug\EconomicCalc.csproj.CopyComplete
 C:\Users\patry\git\obj\Debug\EconomicCalc.exe
 C:\Users\patry\git\obj\Debug\EconomicCalc.pdb
 C:\Users\patry\git\obj\Debug\EconomicCalc.Exchange_form.resources
+C:\Users\patry\git\obj\Debug\EconomicCalc.Form2.resources
