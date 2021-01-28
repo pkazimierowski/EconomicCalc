@@ -16,3 +16,4 @@ C:\Users\joann\source\repos\EconomicCalc\obj\Debug\EconomicCalc.csproj.GenerateR
 C:\Users\joann\source\repos\EconomicCalc\obj\Debug\EconomicCalc.csproj.CoreCompileInputs.cache
 C:\Users\joann\source\repos\EconomicCalc\obj\Debug\EconomicCalc.exe
 C:\Users\joann\source\repos\EconomicCalc\obj\Debug\EconomicCalc.pdb
+C:\Users\joann\source\repos\EconomicCalc\obj\Debug\EconomicCalc.FormCredit.resources
