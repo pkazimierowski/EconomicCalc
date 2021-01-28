@@ -5,13 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Salaries
+namespace EconomicCalc
 {
-    class Program
-    {
-        class contract
+   
+        static class contract
         {
-            public double uop(double gross_salary)
+            static public double uop(double gross_salary)
             {
                 double pension_insurance = gross_salary * 0.0957d;
                 double disability_insurance = gross_salary * 0.015d;
@@ -28,7 +27,7 @@ namespace Salaries
                 return net_payout;
 
             }
-            public double uz(double gross_salary)
+            static public double uz(double gross_salary)
             {
                 double pension_insurance = gross_salary * 0.0957d;
                 double disability_insurance = gross_salary * 0.015d;
@@ -42,7 +41,7 @@ namespace Salaries
                 return net_payout;
             }
 
-            public double uod(double gross_salary)
+            static public double uod(double gross_salary)
             {
                 double obtain_cost = gross_salary * 0.2d;
                 double income = gross_salary - obtain_cost;
@@ -51,7 +50,7 @@ namespace Salaries
                 return net_payout;
             }
 
-            public double b2b(double gross_salary, double costs)
+            static public double b2b(double gross_salary, double costs)
             {
                 double vat = gross_salary * 0.23d;
                 double net_income = gross_salary - vat;
@@ -69,5 +68,5 @@ namespace Salaries
 
 
         }
-    }
+    
 }

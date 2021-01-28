@@ -12,6 +12,7 @@ namespace EconomicCalc
 {
     public partial class form2 : Form
     {
+        double wart1,wart2, result;
         public form2()
         {
             InitializeComponent();
@@ -19,7 +20,30 @@ namespace EconomicCalc
 
         private void button1_Click(object sender, EventArgs e)
         {
+            double.TryParse(Koszty.Text, out wart2);
+            if (double.TryParse(Brutto.Text, out wart1) && wybor.SelectedIndex != -1)
+            {
+               switch(wybor.SelectedIndex)
+                {    
+                    case 0:
+                  result = contract.uop(wart1);
+                  Wynik.Text = result.ToString();
+                  break;
+                    case 1:
+                  result = contract.uz(wart1);
+                  Wynik.Text = result.ToString();
+                  break;
+                    case 2:
+                  result = contract.uod(wart1);
+                  Wynik.Text = result.ToString();
+                  break;
+                    case 3:
+                  result = contract.b2b(wart1, wart2);
+                  Wynik.Text = result.ToString();
+                  break;
 
+                }
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -55,6 +79,21 @@ namespace EconomicCalc
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        public void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

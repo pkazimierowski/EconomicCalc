@@ -30,13 +30,14 @@ namespace EconomicCalc
         private void InitializeComponent()
         {
             this.Przycisk_1_ok = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Brutto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Koszty = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.wybor = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.Wynik = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Przycisk_1_ok
@@ -49,12 +50,13 @@ namespace EconomicCalc
             this.Przycisk_1_ok.UseVisualStyleBackColor = true;
             this.Przycisk_1_ok.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // Brutto
             // 
-            this.textBox1.Location = new System.Drawing.Point(211, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(169, 22);
-            this.textBox1.TabIndex = 1;
+            this.Brutto.Location = new System.Drawing.Point(211, 50);
+            this.Brutto.Name = "Brutto";
+            this.Brutto.Size = new System.Drawing.Size(169, 22);
+            this.Brutto.TabIndex = 1;
+            this.Brutto.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -66,12 +68,13 @@ namespace EconomicCalc
             this.label1.Text = "Podaj swoją wypłatę brutto";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox2
+            // Koszty
             // 
-            this.textBox2.Location = new System.Drawing.Point(192, 338);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(169, 22);
-            this.textBox2.TabIndex = 3;
+            this.Koszty.Location = new System.Drawing.Point(192, 338);
+            this.Koszty.Name = "Koszty";
+            this.Koszty.Size = new System.Drawing.Size(169, 22);
+            this.Koszty.TabIndex = 3;
+            this.Koszty.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
@@ -83,19 +86,19 @@ namespace EconomicCalc
             this.label2.Text = "Podaj koszty (dot. B2B)";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // comboBox1
+            // wybor
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.wybor.FormattingEnabled = true;
+            this.wybor.Items.AddRange(new object[] {
             "Umowa o pracę",
             "Umowa zlecenie",
             "Umowa o dzieło",
             "B2B"});
-            this.comboBox1.Location = new System.Drawing.Point(211, 97);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(171, 24);
-            this.comboBox1.TabIndex = 6;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.wybor.Location = new System.Drawing.Point(211, 97);
+            this.wybor.Name = "wybor";
+            this.wybor.Size = new System.Drawing.Size(171, 24);
+            this.wybor.TabIndex = 6;
+            this.wybor.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -118,18 +121,27 @@ namespace EconomicCalc
             this.label4.Text = "Twoja wypłata netto to:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
+            // Wynik
+            // 
+            this.Wynik.Location = new System.Drawing.Point(620, 270);
+            this.Wynik.Name = "Wynik";
+            this.Wynik.Size = new System.Drawing.Size(150, 22);
+            this.Wynik.TabIndex = 9;
+            this.Wynik.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
             // form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Wynik);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.wybor);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Koszty);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Brutto);
             this.Controls.Add(this.Przycisk_1_ok);
             this.Name = "form2";
             this.Text = "Wypłata netto";
@@ -142,12 +154,13 @@ namespace EconomicCalc
         #endregion
 
         private System.Windows.Forms.Button Przycisk_1_ok;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Brutto;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Koszty;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox wybor;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox Wynik;
     }
 }
