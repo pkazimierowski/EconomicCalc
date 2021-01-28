@@ -8,7 +8,6 @@ C:\Users\patry\source\repos\EconomicCalc\obj\Debug\EconomicCalc.csproj.CoreCompi
 C:\Users\patry\source\repos\EconomicCalc\obj\Debug\EconomicCalc.exe
 C:\Users\patry\source\repos\EconomicCalc\obj\Debug\EconomicCalc.pdb
 C:\Users\User\Source\Repos\EconomicCalc\obj\Debug\EconomicCalc.csprojAssemblyReference.cache
-C:\Users\User\Source\Repos\EconomicCalc\obj\Debug\EconomicCalc.form2.resources
 C:\Users\User\Source\Repos\EconomicCalc\obj\Debug\EconomicCalc.Properties.Resources.resources
 C:\Users\User\Source\Repos\EconomicCalc\obj\Debug\EconomicCalc.csproj.GenerateResource.cache
 C:\Users\User\Source\Repos\EconomicCalc\obj\Debug\EconomicCalc.csproj.CoreCompileInputs.cache
@@ -27,3 +26,5 @@ C:\Users\patry\git\obj\Debug\EconomicCalc.csproj.GenerateResource.cache
 C:\Users\patry\git\obj\Debug\EconomicCalc.csproj.CoreCompileInputs.cache
 C:\Users\patry\git\obj\Debug\EconomicCalc.exe
 C:\Users\patry\git\obj\Debug\EconomicCalc.pdb
+C:\Users\User\source\repos\EconomicCalc\obj\Debug\EconomicCalc.Form1.resources
+C:\Users\User\source\repos\EconomicCalc\obj\Debug\EconomicCalc.TaxForm.resources

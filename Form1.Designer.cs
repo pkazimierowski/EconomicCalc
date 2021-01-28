@@ -70,6 +70,7 @@ namespace EconomicCalc
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 8;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545455F));
@@ -80,7 +81,7 @@ namespace EconomicCalc
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.63636F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.63636F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.63636F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(263, 447);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(351, 550);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -89,9 +90,10 @@ namespace EconomicCalc
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.TaxButton);
-            this.panel1.Location = new System.Drawing.Point(31, 83);
+            this.panel1.Location = new System.Drawing.Point(42, 103);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 54);
+            this.panel1.Size = new System.Drawing.Size(267, 66);
             this.panel1.TabIndex = 7;
             // 
             // TaxButton
@@ -99,26 +101,30 @@ namespace EconomicCalc
             this.TaxButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TaxButton.Location = new System.Drawing.Point(47, 12);
+            this.TaxButton.Location = new System.Drawing.Point(63, 15);
+            this.TaxButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TaxButton.Name = "TaxButton";
-            this.TaxButton.Size = new System.Drawing.Size(100, 30);
+            this.TaxButton.Size = new System.Drawing.Size(133, 37);
             this.TaxButton.TabIndex = 2;
             this.TaxButton.Text = "Taxes";
             this.TaxButton.UseVisualStyleBackColor = true;
+            this.TaxButton.Click += new System.EventHandler(this.TaxButton_Click);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.CreditsButton);
-            this.panel2.Location = new System.Drawing.Point(31, 143);
+            this.panel2.Location = new System.Drawing.Point(42, 177);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 54);
+            this.panel2.Size = new System.Drawing.Size(267, 66);
             this.panel2.TabIndex = 8;
             // 
             // CreditsButton
             // 
-            this.CreditsButton.Location = new System.Drawing.Point(47, 12);
+            this.CreditsButton.Location = new System.Drawing.Point(63, 15);
+            this.CreditsButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CreditsButton.Name = "CreditsButton";
-            this.CreditsButton.Size = new System.Drawing.Size(100, 30);
+            this.CreditsButton.Size = new System.Drawing.Size(133, 37);
             this.CreditsButton.TabIndex = 3;
             this.CreditsButton.Text = "Credits";
             this.CreditsButton.UseVisualStyleBackColor = true;
@@ -126,16 +132,18 @@ namespace EconomicCalc
             // panel3
             // 
             this.panel3.Controls.Add(this.ExchangeButton);
-            this.panel3.Location = new System.Drawing.Point(31, 203);
+            this.panel3.Location = new System.Drawing.Point(42, 251);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 54);
+            this.panel3.Size = new System.Drawing.Size(267, 66);
             this.panel3.TabIndex = 9;
             // 
             // ExchangeButton
             // 
-            this.ExchangeButton.Location = new System.Drawing.Point(47, 12);
+            this.ExchangeButton.Location = new System.Drawing.Point(63, 15);
+            this.ExchangeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExchangeButton.Name = "ExchangeButton";
-            this.ExchangeButton.Size = new System.Drawing.Size(100, 30);
+            this.ExchangeButton.Size = new System.Drawing.Size(133, 37);
             this.ExchangeButton.TabIndex = 4;
             this.ExchangeButton.Text = "Exchange";
             this.ExchangeButton.UseVisualStyleBackColor = true;
@@ -143,16 +151,18 @@ namespace EconomicCalc
             // panel4
             // 
             this.panel4.Controls.Add(this.PitButton);
-            this.panel4.Location = new System.Drawing.Point(31, 263);
+            this.panel4.Location = new System.Drawing.Point(42, 325);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 54);
+            this.panel4.Size = new System.Drawing.Size(267, 66);
             this.panel4.TabIndex = 10;
             // 
             // PitButton
             // 
-            this.PitButton.Location = new System.Drawing.Point(47, 12);
+            this.PitButton.Location = new System.Drawing.Point(63, 15);
+            this.PitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PitButton.Name = "PitButton";
-            this.PitButton.Size = new System.Drawing.Size(100, 30);
+            this.PitButton.Size = new System.Drawing.Size(133, 37);
             this.PitButton.TabIndex = 5;
             this.PitButton.Text = "PIT";
             this.PitButton.UseVisualStyleBackColor = true;
@@ -160,16 +170,18 @@ namespace EconomicCalc
             // panel5
             // 
             this.panel5.Controls.Add(this.DepositsButton);
-            this.panel5.Location = new System.Drawing.Point(31, 323);
+            this.panel5.Location = new System.Drawing.Point(42, 399);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 54);
+            this.panel5.Size = new System.Drawing.Size(267, 66);
             this.panel5.TabIndex = 11;
             // 
             // DepositsButton
             // 
-            this.DepositsButton.Location = new System.Drawing.Point(47, 12);
+            this.DepositsButton.Location = new System.Drawing.Point(63, 15);
+            this.DepositsButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DepositsButton.Name = "DepositsButton";
-            this.DepositsButton.Size = new System.Drawing.Size(100, 30);
+            this.DepositsButton.Size = new System.Drawing.Size(133, 37);
             this.DepositsButton.TabIndex = 6;
             this.DepositsButton.Text = "Deposits";
             this.DepositsButton.UseVisualStyleBackColor = true;
@@ -177,16 +189,18 @@ namespace EconomicCalc
             // panel6
             // 
             this.panel6.Controls.Add(this.button6);
-            this.panel6.Location = new System.Drawing.Point(31, 383);
+            this.panel6.Location = new System.Drawing.Point(42, 473);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 61);
+            this.panel6.Size = new System.Drawing.Size(267, 73);
             this.panel6.TabIndex = 12;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(47, 3);
+            this.button6.Location = new System.Drawing.Point(63, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(100, 30);
+            this.button6.Size = new System.Drawing.Size(133, 37);
             this.button6.TabIndex = 7;
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
@@ -197,9 +211,10 @@ namespace EconomicCalc
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel7.Controls.Add(this.label1);
-            this.panel7.Location = new System.Drawing.Point(31, 23);
+            this.panel7.Location = new System.Drawing.Point(42, 29);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(200, 54);
+            this.panel7.Size = new System.Drawing.Size(267, 66);
             this.panel7.TabIndex = 13;
             // 
             // label1
@@ -208,9 +223,10 @@ namespace EconomicCalc
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 21);
+            this.label1.Location = new System.Drawing.Point(35, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 13);
+            this.label1.Size = new System.Drawing.Size(160, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Chose type of calculator";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -218,10 +234,11 @@ namespace EconomicCalc
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(263, 447);
+            this.ClientSize = new System.Drawing.Size(351, 550);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Calc";
             this.Load += new System.EventHandler(this.Form1_Load);

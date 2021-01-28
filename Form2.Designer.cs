@@ -1,7 +1,7 @@
 ﻿
 namespace EconomicCalc
 {
-    partial class form2
+    partial class TaxForm
     {
         /// <summary>
         /// Required designer variable.
@@ -129,7 +129,7 @@ namespace EconomicCalc
             this.Wynik.TabIndex = 9;
             this.Wynik.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // form2
+            // TaxForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -143,8 +143,9 @@ namespace EconomicCalc
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Brutto);
             this.Controls.Add(this.Przycisk_1_ok);
-            this.Name = "form2";
+            this.Name = "TaxForm";
             this.Text = "Wypłata netto";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TaxForm_FormClosed);
             this.Load += new System.EventHandler(this.form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

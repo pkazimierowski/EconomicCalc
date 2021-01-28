@@ -46,5 +46,12 @@ namespace EconomicCalc
         {
 
         }
+
+        private void TaxButton_Click(object sender, EventArgs e)
+        {
+            TaxForm TxForm = new TaxForm(this);
+            this.Hide();
+            TxForm.Show();
+        }
     }
 }
