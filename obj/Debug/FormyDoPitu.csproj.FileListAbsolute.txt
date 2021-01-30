@@ -1,0 +1,10 @@
+A:\Users\Dawid\source\repos\FormyDoPitu\FormyDoPitu\bin\Debug\FormyDoPitu.exe.config
+A:\Users\Dawid\source\repos\FormyDoPitu\FormyDoPitu\bin\Debug\FormyDoPitu.exe
+A:\Users\Dawid\source\repos\FormyDoPitu\FormyDoPitu\bin\Debug\FormyDoPitu.pdb
+A:\Users\Dawid\source\repos\FormyDoPitu\FormyDoPitu\obj\Debug\FormyDoPitu.csprojAssemblyReference.cache
+A:\Users\Dawid\source\repos\FormyDoPitu\FormyDoPitu\obj\Debug\FormyDoPitu.Properties.Resources.resources
+A:\Users\Dawid\source\repos\FormyDoPitu\FormyDoPitu\obj\Debug\FormyDoPitu.csproj.GenerateResource.cache
+A:\Users\Dawid\source\repos\FormyDoPitu\FormyDoPitu\obj\Debug\FormyDoPitu.csproj.CoreCompileInputs.cache
+A:\Users\Dawid\source\repos\FormyDoPitu\FormyDoPitu\obj\Debug\FormyDoPitu.exe
+A:\Users\Dawid\source\repos\FormyDoPitu\FormyDoPitu\obj\Debug\FormyDoPitu.pdb
+A:\Users\Dawid\Source\Repos\FormyDoPitu\FormyDoPitu\obj\Debug\EconomicCalc.Form1.resources
