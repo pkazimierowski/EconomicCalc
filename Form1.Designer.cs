@@ -1,5 +1,4 @@
-﻿
-namespace EconomicCalc
+﻿namespace EconomicCalc
 {
     partial class Form1
     {
@@ -156,6 +155,7 @@ namespace EconomicCalc
             this.PitButton.TabIndex = 5;
             this.PitButton.Text = "PIT";
             this.PitButton.UseVisualStyleBackColor = true;
+            this.PitButton.Click += new System.EventHandler(this.PitButton_Click);
             // 
             // panel5
             // 
@@ -256,4 +256,3 @@ namespace EconomicCalc
         private System.Windows.Forms.Label label1;
     }
 }
-

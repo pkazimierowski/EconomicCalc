@@ -19,7 +19,7 @@ namespace EconomicCalc
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -44,6 +44,14 @@ namespace EconomicCalc
 
         private void label1_Click_2(object sender, EventArgs e)
         {
+
+        }
+
+        private void PitButton_Click(object sender, EventArgs e)
+        {
+            PIT_Form PitForm = new PIT_Form(this);
+            this.Hide();
+            PitForm.Show();
 
         }
     }
