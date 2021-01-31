@@ -1,0 +1,10 @@
+A:\Users\Dawid\source\repos\DepositForms\obj\Debug\DepositForms.csprojAssemblyReference.cache
+A:\Users\Dawid\source\repos\DepositForms\obj\Debug\EconomicCalc.Form1.resources
+A:\Users\Dawid\source\repos\DepositForms\obj\Debug\DepositForms.Properties.Resources.resources
+A:\Users\Dawid\source\repos\DepositForms\obj\Debug\DepositForms.csproj.GenerateResource.cache
+A:\Users\Dawid\source\repos\DepositForms\obj\Debug\DepositForms.csproj.CoreCompileInputs.cache
+A:\Users\Dawid\source\repos\DepositForms\bin\Debug\DepositForms.exe.config
+A:\Users\Dawid\source\repos\DepositForms\bin\Debug\DepositForms.exe
+A:\Users\Dawid\source\repos\DepositForms\bin\Debug\DepositForms.pdb
+A:\Users\Dawid\source\repos\DepositForms\obj\Debug\DepositForms.exe
+A:\Users\Dawid\source\repos\DepositForms\obj\Debug\DepositForms.pdb

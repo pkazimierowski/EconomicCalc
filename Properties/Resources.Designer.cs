@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace EconomicCalc.Properties
+namespace DepositForms.Properties
 {
     /// <summary>
     ///   Silnie typizowana klasa zasobów do wyszukiwania zlokalizowanych ciągów itd.
@@ -43,7 +43,7 @@ namespace EconomicCalc.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("EconomicCalc.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DepositForms.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
