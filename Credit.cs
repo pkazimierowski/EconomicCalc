@@ -35,6 +35,13 @@ namespace  EconomicCalc
             double LoanInstallment = AmountOfCredit * Math.Pow(q, NumberOfInstallments) * (q - 1) / (Math.Pow(q, NumberOfInstallments) - 1);
             return Math.Round(LoanInstallment, 2);
         }
+       
+        //kwota do spłaty
+        static public double Total(double LoanInstallment, double NumberOfInstallment)
+        {
+            double TotalCost = LoanInstallment * NumberOfInstallment;
+            return TotalCost;
+        }
 
     }
 }

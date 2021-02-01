@@ -12,7 +12,7 @@ namespace EconomicCalc
 {
     public partial class FormCredit : Form
     {
-        double kredyt, raty, oprocentowanie, prowizja, rataKredytu;
+        double kredyt, raty, oprocentowanie, prowizja, rataKredytu, koszt;
         public FormCredit()
         {
             InitializeComponent();
@@ -20,7 +20,7 @@ namespace EconomicCalc
 
         private void buttonOblicz_Click(object sender, EventArgs e)
         {
-
+            double.TryParse(textBoxCalkowityKoszt.Text, out koszt);
             double.TryParse(textBoxIloscRat.Text, out raty);
             double.TryParse(textBoxOprocentowanie.Text, out oprocentowanie);
             double.TryParse(textBoxProwizja.Text, out prowizja);
@@ -30,14 +30,20 @@ namespace EconomicCalc
                 {
                     case 0:
                         rataKredytu = Credit.Installment(kredyt, oprocentowanie, raty);
+                        koszt = Credit.Total(rataKredytu, raty);
+                        textBoxCalkowityKoszt.Text = koszt.ToString();
                         textBoxRataKredytu.Text = rataKredytu.ToString();
                         break;
                     case 1:
                         rataKredytu = Credit.InstallmentNetto(kredyt, oprocentowanie, raty, prowizja);
+                        koszt = Credit.Total(rataKredytu, raty);
+                        textBoxCalkowityKoszt.Text = koszt.ToString();
                         textBoxRataKredytu.Text = rataKredytu.ToString();
                         break;
                     case 2:
                         rataKredytu = Credit.InstallmentBrutto(kredyt, oprocentowanie, raty, prowizja);
+                        koszt = Credit.Total(rataKredytu, raty);
+                        textBoxCalkowityKoszt.Text = koszt.ToString();
                         textBoxRataKredytu.Text = rataKredytu.ToString();
                         break;
 
