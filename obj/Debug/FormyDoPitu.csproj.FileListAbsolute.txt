@@ -8,3 +8,10 @@ A:\Users\Dawid\source\repos\FormyDoPitu\FormyDoPitu\obj\Debug\FormyDoPitu.csproj
 A:\Users\Dawid\source\repos\FormyDoPitu\FormyDoPitu\obj\Debug\FormyDoPitu.exe
 A:\Users\Dawid\source\repos\FormyDoPitu\FormyDoPitu\obj\Debug\FormyDoPitu.pdb
 A:\Users\Dawid\Source\Repos\FormyDoPitu\FormyDoPitu\obj\Debug\EconomicCalc.Form1.resources
+C:\Users\patry\git\obj\Debug\FormyDoPitu.csprojAssemblyReference.cache
+C:\Users\patry\git\obj\Debug\EconomicCalc.PIT_Form.resources
+C:\Users\patry\git\obj\Debug\FormyDoPitu.Properties.Resources.resources
+C:\Users\patry\git\obj\Debug\FormyDoPitu.csproj.GenerateResource.cache
+C:\Users\patry\git\obj\Debug\FormyDoPitu.csproj.CoreCompileInputs.cache
+C:\Users\patry\git\obj\Debug\FormyDoPitu.exe
+C:\Users\patry\git\obj\Debug\FormyDoPitu.pdb
