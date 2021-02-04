@@ -165,6 +165,7 @@
             this.labelProwizja.Size = new System.Drawing.Size(46, 13);
             this.labelProwizja.TabIndex = 12;
             this.labelProwizja.Text = "Prowizja";
+            this.labelProwizja.Visible = false;
             this.labelProwizja.Click += new System.EventHandler(this.labelProwizja_Click);
             // 
             // textBoxProwizja
@@ -173,6 +174,7 @@
             this.textBoxProwizja.Name = "textBoxProwizja";
             this.textBoxProwizja.Size = new System.Drawing.Size(100, 20);
             this.textBoxProwizja.TabIndex = 13;
+            this.textBoxProwizja.Visible = false;
             this.textBoxProwizja.TextChanged += new System.EventHandler(this.textBoxProwizja_TextChanged);
             // 
             // FormCredit

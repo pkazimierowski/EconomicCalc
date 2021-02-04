@@ -63,6 +63,24 @@ namespace EconomicCalc
         private void wybor_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+            switch(wybor.SelectedIndex)
+            {
+                case 0:
+                    textBoxProwizja.Hide();
+                    labelProwizja.Hide();
+                    break;
+                case 1:
+                    textBoxProwizja.Show();
+                    labelProwizja.Show();
+                    break;
+                case 2:
+                    textBoxProwizja.Show();
+                    labelProwizja.Show();
+                    break;
+
+            }
+
+
         }
 
         private void labelCalkowityKoszt_Click(object sender, EventArgs e)
