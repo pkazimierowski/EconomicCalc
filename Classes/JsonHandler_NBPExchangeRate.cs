@@ -10,14 +10,17 @@ namespace EconomicCalc
 {
     class JsonHandler_NBPExchangeRate
     {
+        /**
+         * An instance of this class is a handle to the json file from NBP api
+         * 
+         * @author Patryk Kazimierowski
+         */
         private List<RootObject> List;
         private string BaseAddr = "http://api.nbp.pl/api/exchangerates/tables/c/";
 
-        public List<RootObject> GetRootObjects()
-        {
-            return List;
-        }
-
+        /**
+         * Method to convert Json file to List type
+         */
         public async Task ConverJsonToList()
         {
             try
@@ -29,6 +32,11 @@ namespace EconomicCalc
                 var a = e.Message.ToString();
             }
         }
+        /**
+         * Method to connect to the NbP api and download json file 
+         * @return testrequest
+         *      String wiht Json file
+         */
         private async Task<string> TestGet()
         {
             String testrequest = "";
@@ -55,6 +63,15 @@ namespace EconomicCalc
                 var a = e.Message.ToString();
             }
             return testrequest;
+        }
+
+        /**
+         * @return List
+         *      converted Json file to List
+         */
+        public List<RootObject> GetRootObjects()
+        {
+            return List;
         }
     }
 }
